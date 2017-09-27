@@ -76,6 +76,7 @@ DATA TYPE
 ### Convert Datatypes
 
 > a = 5
+
 > b = 3.4
 
 
