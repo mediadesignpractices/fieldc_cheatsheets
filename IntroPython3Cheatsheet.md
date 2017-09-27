@@ -32,17 +32,19 @@ DATA TYPE
 | **insert**(index,'value')   | `h.insert(3,  ‘great’)` |
 | **append**('value')   | `h.append(‘certainty’)` |
 
+
 **Remove an Element**
 
-|             | Example   | Output
-| -----------|:----------:|
+|             | Example   | Output |
+| ---------- |:----------:|:-------:|
 | **remove()**   | `h.remove('is')` | removes the value |
-|**pop()**| `h.pop()`|`'List'`
+| **pop()**| `h.pop()`|`'List'`
+
 
 **More functions and commands**
 
 |             | Example   | Output |
-| -----------|:----------:|
+| -----------|:----------:|:------:|
 | **_h[:'value']_**   | `h[:2]` | `['this','is']`
 | **_length_**| `len(h)`| `4`|
 |**_index()_**| `h.index('this')`| `1`
@@ -59,13 +61,13 @@ DATA TYPE
 **Add a new key-value**
 
 |             | Example   | output
-| -----------|:----------:||
+| -----------|:----------:|:------:|
 | **d['Key'] = 'Value'**   | `d [‘eyes’ ]= ‘brown’` | randomly added
 
 **Delete an item from the dictionary by key**
 
 |             | Example   | output
-| -----------|:----------:|
+| -----------|:----------:|:------:|
 | **del()**   | `del d['age']` | deletes the key and value
 | **pop()**   | `d.pop(‘name’)` |`boris`|
 
