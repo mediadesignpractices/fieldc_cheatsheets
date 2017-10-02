@@ -135,7 +135,7 @@ Other Functions
 The range function makes a list of arithmetic progression.
 
 |             | Example   | output
-| -----------|:----------:|
+| -----------|:----------:|:----:|
 | **range()** | `range(10)`  |range(0,10)
 
 _input_
