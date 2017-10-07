@@ -30,7 +30,7 @@ except KeyboardInterrupt:
         print('interrupted!')
         print("Goodbye!")```
 
-Here's a more complex example that will blink an LED on for one second and off for one second *forever* until stopped by the keyboard interrupt command:
+Here is a more complex example that will blink an LED on for one second and off for one second *forever* until stopped by the keyboard interrupt command:
 
 ```python
 from gpiozero import LED
