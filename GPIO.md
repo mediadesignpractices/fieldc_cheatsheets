@@ -28,7 +28,8 @@ try:
         print("do stuff!")
 except KeyboardInterrupt:
         print('interrupted!')
-        print("Goodbye!")```
+        print("Goodbye!")
+```
 
 Here is a more complex example that will blink an LED on for one second and off for one second *forever* until stopped by the keyboard interrupt command:
 
@@ -48,7 +49,8 @@ try:
 except KeyboardInterrupt:
         print('interrupted!')
         led.close()
-        print("Goodbye!")```
+        print("Goodbye!")
+```
 
 To break down the anatomy of the above script...
 
