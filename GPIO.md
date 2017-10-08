@@ -16,7 +16,7 @@ _gpiozero is a simple interface to GPIO [General Purpose Input Output] devices w
 ### Pin Numbering
 
 ![alt
-text](https://github.com/Akashdman/chillin/blob/master/pin_layout.png)
+text](https://github.com/Akashdman/chillin/blob/master/Pin%20layout.png)
 
 ### Turning on an LED
 
