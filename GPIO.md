@@ -119,7 +119,7 @@ To break down the anatomy of the above script...
 
 ---
 
-## Blinking an LED using a Button
+## Different Uses of Button
 
 ### Equipment Needed
 
