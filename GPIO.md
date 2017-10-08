@@ -211,7 +211,7 @@ button.when_released = led.off
 pause()
 ```
 
-**Break down of important line of in the both of the above script:**
+**Break down of important line of code in the both of the above script:**
 
 * `from gpiozero import Button && import LED`:
 imports Button and LED from gpiozero library
