@@ -228,3 +228,7 @@ imports Button and LED from gpiozero library
 
 
 > Link to Gpiozero Library functions : http://gpiozero.readthedocs.io/en/stable/index.html
+
+---
+
+## Troubleshooting
