@@ -29,7 +29,7 @@ Reference images:
 3. Press `enter` to bring up the login screen.
 > **NOTE**  Once a connection is made you should notice that your terminal label will update to screen as opposed to bash.
 
-4. Enter your ogin credentials.
+4. Enter your login credentials.
 
 
 #### Disconnecting from `screen`
@@ -86,3 +86,35 @@ Reference images:
 <br>64 bytes from 198.35.26.96: icmp_seq=2 ttl=52 time=16.952 ms
 
 6. To end `ping`, press `CTRL`+ `C`.
+
+#### Screen terminal is no responding
+
+If somehow the screen terminal is not responding and you cannot connect your Raspberry pi. Try these different solutions mentioned below.
+
+1. Check if any other session is still open by `screen -ls`. If yes kill it using `screen -X -S [session number] quit`
+
+2. Check if the SD Card is inserted properly.
+
+3. Format the SD card again and boot it again.
+
+4. If screen acts wierd by getting stuck after intiating and does not show the login screen. 
+* Try connecting it again by restarting your computer and raspberry pi.
+* if still doesn't work, Use the an older mac/laptop of your teammate and connect it. 
+* Find the IP address using `hostname -I`.
+* Creat a new user on your raspberry pi. 
+* Add the credentials of the nearest wifi network in `wpa_suppliment.conf` file. 
+* Now, Use your own mac/system and connect your raspberry pi using wifi not by FDTI breakout. Make sure your system is connected to the same wifi network you added in raspberry config file. 
+* now use `ssh pi@[hostname].local` hostname is the name of the user you added using your teammates laptop.
+* if hostname is not find, check your wifi connection and check your credentials in 
+* add your passowrd and have fun.
+
+#### Alternate way to find IP address of pi
+
+1. Connect to your pi using `ssh pi@[name].local` 
+2. `sudo ifconfig`
+3. Next to the `wlan0` entry you will see inet addr: 192.xxx.xxx.xxx or 10.xxx.xxx.xxx which is the IP address of the Raspberry Pi. 
+
+
+
+
+
