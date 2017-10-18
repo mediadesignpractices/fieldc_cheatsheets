@@ -79,6 +79,26 @@ Keep in mind,
 - `/` that trialing slash is important!
 - Works for single file, and directories.
 
+# Simple Video
+
+'camera.start_preview()'
+
+gives the camera time to focus
+
+'camera.start_recording()'
+
+record video start command 
+
+'camera.stop_recording()'
+
+record video stop command 
+
+'sleep()'
+
+controls how long the video is
+
+
+
 # Deploying with the Pi Camera
 The below script uses a (1) GPIO/toggle button function, and (2) LED light (sanity check) that becomes important for deployment.
 
