@@ -97,6 +97,17 @@ record video stop command
 
 controls how long the video is
 
+## Converting Video
+
+> Note: Picamera saves video as Raw H264 Video Data. To view it on any display, convert it to MP4 using MP4Box converter.
+
+_Follow the following steps to install:_
+
+1. Download and install gpac on Pi: `sudo apt-get install -y gpac`
+2. `cd` to the directory where your video lives and use MP4Box to convert your video to .mp4: `MP4Box -fps 30 -add myvid.h264 myvid.mp4`
+3. Delete the original: 'rm mywid.h264'
+4. Transfer the file to your Mac using scp :`scp myvid.mp4 [username]@IPaddressofmac /path/to`
+5. Navigate to your `/path/to` and double click the .mp4 to watch.
 
 
 # Deploying with the Pi Camera
