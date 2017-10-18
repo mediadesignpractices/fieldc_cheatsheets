@@ -82,9 +82,9 @@ Keep in mind,
 # Deploying with the Pi Camera
 The below script uses a (1) GPIO/toggle button function, and (2) LED light (sanity check) that becomes important for deployment.
 
-To run this on boot, 'cd' into '/etc/rc.local' and change path name to 'su -c "python3 /path/to/[YOUR FILE NAME].py" pi &'
+To run this on boot, `cd` into `/etc/rc.local` and change path name to `su -c "python3 /path/to/[YOUR FILE NAME].py" pi &`
 
-from gpiozero import Button
+`from gpiozero import Button
 from gpiozero import LED
 from picamera import PiCamera
 from datetime import datetime
@@ -128,4 +128,4 @@ except KeyboardInterrupt:
     print("INTERRUPTED!")
     button.close()
     camera.close()
-    led.close()
+    led.close()`
