@@ -115,7 +115,7 @@ The below script uses a (1) GPIO/toggle button function, and (2) LED light (sani
 
 To run this on boot, `cd` into `/etc/rc.local` and change path name to `su -c "python3 /path/to/[YOUR FILE NAME].py" pi &`
 
-```python3
+```python
 from gpiozero import Button
 from gpiozero import LED
 from picamera import PiCamera
