@@ -87,11 +87,11 @@ gives the camera time to focus
 
 `camera.start_recording()`
 
-record video start command 
+record video start command
 
 `camera.stop_recording()`
 
-record video stop command 
+record video stop command
 
 `sleep()`
 
@@ -115,7 +115,8 @@ The below script uses a (1) GPIO/toggle button function, and (2) LED light (sani
 
 To run this on boot, `cd` into `/etc/rc.local` and change path name to `su -c "python3 /path/to/[YOUR FILE NAME].py" pi &`
 
-`from gpiozero import Button
+```python3
+from gpiozero import Button
 from gpiozero import LED
 from picamera import PiCamera
 from datetime import datetime
@@ -159,4 +160,5 @@ except KeyboardInterrupt:
     print("INTERRUPTED!")
     button.close()
     camera.close()
-    led.close()`
+    led.close()
+  ```
