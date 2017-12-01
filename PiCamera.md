@@ -87,16 +87,27 @@ gives the camera time to focus
 
 `camera.start_recording()`
 
-record video start command 
+record video start command
 
 `camera.stop_recording()`
 
-record video stop command 
+record video stop command
 
 `sleep()`
 
 controls how long the video is
 
+## Converting Video
+
+> Note: Picamera saves video as Raw H264 Video Data. To view it on any display, convert it to MP4 using MP4Box converter.
+
+_Follow the following steps to install:_
+
+1. Download and install gpac on Pi: `sudo apt-get install -y gpac`
+2. `cd` to the directory where your video lives and use MP4Box to convert your video to .mp4: `MP4Box -fps 30 -add myvid.h264 myvid.mp4`
+3. Delete the original: 'rm mywid.h264'
+4. Transfer the file to your Mac using scp :`scp myvid.mp4 [username]@IPaddressofmac /path/to`
+5. Navigate to your `/path/to` and double click the .mp4 to watch.
 
 
 # Deploying with the Pi Camera
@@ -104,7 +115,8 @@ The below script uses a (1) GPIO/toggle button function, and (2) LED light (sani
 
 To run this on boot, `cd` into `/etc/rc.local` and change path name to `su -c "python3 /path/to/[YOUR FILE NAME].py" pi &`
 
-`from gpiozero import Button
+```python
+from gpiozero import Button
 from gpiozero import LED
 from picamera import PiCamera
 from datetime import datetime
@@ -148,4 +160,5 @@ except KeyboardInterrupt:
     print("INTERRUPTED!")
     button.close()
     camera.close()
-    led.close()`
+    led.close()
+  ```
